@@ -1,1 +1,9 @@
-<h1>mchango-Yangu</h1>
+<% @contributions.each do |contribution| %> 
+  <%= image_tag contribution.image.url(:medium) %>
+  <br>
+  <%= contribution.phone %>
+  <br>
+  <%= contribution.description %>
+  <br>
+  <%= contribution.amount %>
+<% end %>
