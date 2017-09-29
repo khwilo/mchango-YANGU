@@ -3,5 +3,6 @@ class ContributionsController < ApplicationController
   end
   
   def new
+    @contribution = Contribution.new
   end
 end

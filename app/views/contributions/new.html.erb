@@ -1,0 +1,7 @@
+<%= simple_form_for @contribution do |f| %>
+  <%= f.input  :phone, label: 'Enter phone number', error: 'Phone number is required' %>
+  <%= f.input  :description, hint: 'Enter description for the kind of contribution' %>
+  <%= f.input  :amount, label: 'Enter the target amount in Ksh'  %>
+  <%= f.input  :image %>
+  <%= f.button :submit%>
+<% end %>
