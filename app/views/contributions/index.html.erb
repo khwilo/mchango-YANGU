@@ -6,4 +6,10 @@
   <%= contribution.description %>
   <br>
   <%= contribution.amount %>
+
+  <%= simple_form_for contribution do |f| %>
+    <%= f.input  :donation, label: 'Donation' %>
+    <%= f.button :submit %>
+  <% end %>
 <% end %>
+
