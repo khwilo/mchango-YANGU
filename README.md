@@ -22,3 +22,8 @@ Patient contribution application... more to come.
 
   - After payment is done, then display amount remaining.  
   - If target is reached close the payment, i.e disable the button.  
+
+3. Implement C2B payments in application.  
+  - Confirm payment from the contributor to the 'contributee'  
+  - Once the user clicks on the **contribution** button, the money is tied to the contributors account.  
+  
