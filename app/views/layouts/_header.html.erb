@@ -3,12 +3,11 @@
     <nav id="header" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <%= link_to "mchango-YANGU", '#', id: "brand", class: "navbar-brand" %>
+          <%= link_to "mchango-YANGU", root_path, id: "brand", class: "navbar-brand" %>
         </div>
         <ul class="nav navbar-nav navbar-right">
-          <li><%= link_to "About",     '#' %></li>
-          <li><%= link_to "Contact",   '#' %></li>
-          <li><%= link_to "Donate",    '#' %></li>
+          <li><%= link_to "Home",   root_path %></li>
+          <li><%= link_to "Donate",    donate_path %></li>
         </ul>
       </div>
     </nav>
