@@ -7,17 +7,15 @@
       </div>
       
       <br>
-      <%= contribution.description %>
-
-      <div class>
-        <%= simple_form_for contribution do |f| %>
-          <br>
-          <%= f.input  :sender, label: 'Enter phone number' %>
-          <%= f.input  :donation, label: 'Enter donation Amount' %>
-          <%= f.button :submit %>
-        <% end %>
+      <h2>Description:</h2>
+      <div id="contribution">
+        <%= contribution.description %>
       </div>
 
-    </div> 
+      <br>
+    
+      <%= link_to '<button type="button">Donate</button>'.html_safe, donate_path %>
+     
+    </div>
   </div>
 <% end %>

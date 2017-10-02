@@ -5,8 +5,6 @@ require 'uri'
 class ContributionsController < ApplicationController
   def index
     @contributions = Contribution.all
-    
-    @pay = params[:id]
   end
   
   def new
@@ -18,8 +16,8 @@ class ContributionsController < ApplicationController
     redirect_to contributions_path
   end
 
-  def update
-        
+  def donate
+    @contributions = Contribution.all      
   end
   
   """
