@@ -1,15 +1,23 @@
-<% @contributions.each do |contribution| %> 
-  <%= image_tag contribution.image.url(:medium) %>
-  <br>
-  <%= contribution.phone %>
-  <br>
-  <%= contribution.description %>
-  <br>
-  <%= contribution.amount %>
+<% @contributions.each do |contribution| %>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-2">
 
-  <%= simple_form_for contribution do |f| %>
-    <%= f.input  :donation, label: 'Donation' %>
-    <%= f.button :submit %>
-  <% end %>
+      <div id="image">
+        <%= image_tag contribution.image.url(:medium) %>
+      </div>
+      
+      <br>
+      <%= contribution.description %>
+
+      <div class>
+        <%= simple_form_for contribution do |f| %>
+          <br>
+          <%= f.input  :sender, label: 'Enter phone number' %>
+          <%= f.input  :donation, label: 'Enter donation Amount' %>
+          <%= f.button :submit %>
+        <% end %>
+      </div>
+
+    </div> 
+  </div>
 <% end %>
-
