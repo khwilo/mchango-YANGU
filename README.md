@@ -26,4 +26,12 @@ Patient contribution application... more to come.
 3. Implement C2B payments in application.  
   - Confirm payment from the contributor to the 'contributee'  
   - Once the user clicks on the **contribution** button, the money is tied to the contributors account.  
+ 
+ 
+Getting the timestamp:  
+```bash
+$ date +%Y%m%d%H%M%S
+```  
+
+Perform the base64 encoding [here](https://www.base64encode.org/).
   
